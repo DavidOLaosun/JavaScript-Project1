@@ -57,19 +57,31 @@ var quotes = [
 ];
 
 function getRandomQuote(){
-	var randomNumber;
-	randomNumber = Math.floor(Math.random() * quotes.length);
-	//clear interval
-	//clearInterval(intervalid);
+	var randomNumber = Math.floor(Math.random()*7) + 1;
 	return quotes[randomNumber];
 }
+console.log(getRandomQuote() );
 
-function randomBgColor(){
+function printQuote(){
+	var pullQuote = getRandomQuote(){
+	var HTML = '';
+	HTML +="<p class="quote">"	+ [pullQuote.quote] + "</p>";
+	HTML +="<p class="source">" + [pullQuote.source];
+	if(pullQuote.citation) {
+		HTML += "<span class="citation">" + [pullQuote.citation] + "</span>"
+	if (pullQuote.tag){
+		HTML += "<span class="tag">" +[pullQuote.tag] + "</span>"
+		"</p>"
 
+	}
 }
-  
-  
-  /***
+
+console.log(printQuote() );
+
+
+
+
+	/***
 	 * click event listener for the print quote button
 	 * DO NOT CHANGE THE CODE BELOW!!
 	 ***/
